@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2c3e50;
+    padding: 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover{
+    background: rgb(75, 137, 252);
+}
+
+section{
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#inicio{
+    background: #2c3e50;
+    color: white;
+}
+
+#inicio h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#inicio p{
+    font-size: 1.3rem;
+    max-width: 1000px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.6s;
+    box-shadow: 0.6s;
+    border: 1px solid white;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    background: rgb(253, 172, 24);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* nosotros */
+
+#nosotros{
+    background: #f8f9fa;
+}
+
+#nosotros h2{
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#nosotros p{
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #555;
+}
+
+#nosotros .btn{
+    background: rgb(62, 192, 252);
+}
+
+#nosotros a:hover{
+    transform: translateY(-3px);
+    background: rgb(253, 172, 24);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* servicios */
+
+#servicios{
+    background: #eaebeb;
+}
+
+#servicios h2{
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+#servicios p{
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.caja-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.caja{
+    background: #f8f9fa;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.caja:hover{
+    transform: translateY(-10px);
+}
+
+.caja h3{
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+/* galeria */
+
+#galeria{
+    background: white;
+}
+
+.caja-galeria{
+    width: 100%;
+    min-height: 50vh;
+    background: #2c3e50;
+    color: white;
+}
+
+.caja-galeria h2{
+    font-size: 3.0rem;
+}
+
+#galeria .hdos{
+    padding-top: 40px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.caja-dos-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.proyectos-galeria{
+    background: orange;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.5s;
+}
+
+.proyectos-galeria:hover{
+    background: #e74c3c;
+}
+
+/* contacto */
+
+#contacto{
+    background: #f8f9fa;
+}
+
+#contacto h2{
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+#contacto p{
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea{
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+button[type="submit"]{
+    padding: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover{
+     background: rgb(120, 1, 153);
+}
+
+
+/* footer */
+
+footer{
+    background: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+/* MediaQueries */
+
+@media (max-width: 768px){
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #inicio h1{
+        font-size: 2rem;
+    }
+
+    section {
+        padding-top: 180px;
+    }
+}
