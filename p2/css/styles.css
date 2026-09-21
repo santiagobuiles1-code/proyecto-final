@@ -63,7 +63,7 @@ body{
 
 .nom1{
     background-color: rgba(188, 0,7, 0.8);
-    width: 17%;
+    width: 20%;
     padding: 10px;
     position: absolute;
     top: 140px;
@@ -138,7 +138,7 @@ p::selection {
 
 .contacto{
     background-color: rgba(188, 0.7, 0.8);
-    width: 19%;
+    width: 24%;
     padding: 10px;
     position: absolute;
     top: 140px;
