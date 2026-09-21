@@ -6,37 +6,35 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-slate-950">
-    <header class="cabeza bg-slate-900 flex flex-row p-5 justify-between">
-        <h1 class="text-3xl font-bold text-indigo-400 ml-6">
-            MR
-        </h1>
-        <div class="px-8 p-2 flex gap-10 text-white">
+    <header class="cabeza bg-slate-900 flex flex-col md:flex-row p-5 justify-between items-center">
+        <h1 class="text-3xl font-bold text-indigo-400 ml-0 md:ml-6">MR</h1>
+        <div class="px-2 md:px-8 p-2 flex flex-col md:flex-row gap-4 md:gap-10 text-white items-center">
             <a href="#">Sobre mi</a>
             <a href="#">Proyectos</a>
             <a href="#">Habilidades</a>
             <a href="#">Contacto</a>
         </div>
-        <button class="bg-purple-700 c-p text-white cursor-pointer p-1 px-5 mr-6 rounded-md cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purple-600" > 📎CV </button>
+        <button class="bg-purple-700 c-p text-white cursor-pointer py-2 pr-6 pl-5 mr-0 md:mr-6 rounded-md cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purple-600">📎CV</button>
     </header>
 
-    <main class="flex flex-row p-5 justify-between ml-50 mt-12">
-        <div class="">
-            <h2 class="pt-5 text-8xl text-white">Hola, soy</h2>
-            <h2 class="pt-5 text-indigo-700 text-8xl">Santiago Builes</h2>
-            <h3 class="mt-5 text-4xl text-gray-400">Desarrollador Front-end</h3>
-            <p class="mt-5 text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit.  <br>Maiores pariatur eos eveniet molestias, doloribus vel expedita? Excepturi corrupti aliquam voluptates, <br>sint accusantium iure autem qui facilis. Consectetur voluptas nemo nesciunt!</p>
+    <main class="flex flex-col md:flex-row p-5 justify-between ml-0 md:ml-50 mt-8 md:mt-12">
+        <div class="pl-5 md:pl-0">
+            <h2 class="pt-5 text-5xl md:text-8xl text-white">Hola, soy</h2>
+            <h2 class="pt-5 text-indigo-700 text-5xl md:text-8xl">Santiago Builes</h2>
+            <h3 class="mt-5 text-2xl md:text-4xl text-gray-400">Desarrollador Front-end</h3>
+            <p class="mt-5 text-gray-400 max-w-[600px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur eos eveniet molestias, doloribus vel expedita? Excepturi corrupti aliquam voluptates, sint accusantium iure autem qui facilis. Consectetur voluptas nemo nesciunt!</p>
             <button class="bg-purple-700 c-p text-white cursor-pointer p-1 px-5 mr-6 rounded-md mt-5 cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purple-600" >Ver proyectos &rarr;</button>
             <button class="bg-purple-700 c-p text-white cursor-pointer p-1 px-5 mr-6 rounded-md mt-5 cursor-pointer transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purple-600" >Contactar ✉</button>
         </div>
-        <div class="mr-60 mt-1">
+        <div class="mr-0 md:mr-60 mt-8 md:mt-1">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfjtGvdcDXhvvVWgjNWR7G-bfWseWvP9y0RN5_wyg1rg&s=10" alt="foto" class="rounded-full">
         </div>
     </main>
 
     <section class=" text-white">
         
-        <h2 class="font-bold text-white ml-52 mt-12 mb-10 text-3xl">🗂 Proyectos Destacados</h2>
-        <div class="flex flex-row gap-10 justify-center pb-10">
+        <h2 class="font-bold text-white ml-5 md:ml-52 mt-12 mb-10 text-3xl">🗂 Proyectos Destacados</h2>
+        <div class="flex flex-col md:flex-row gap-10 justify-content-center pb-10 ml-8 md:ml-53">
             <a href="p1/index.html" class="cursor-pointer delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:brightness-110">
                 <div class="w-85 bg-slate-900 shadow-xl/60 shadow-slate-500/50 inset-shadow-sm inset-shadow-slate-500/60 p-4 rounded-md">
                     <img src="images/proyecto 1.png" alt="p1" class="rounded-md h-45">
@@ -73,6 +71,8 @@
                     </div>
                 </div>
             </a>
+        </div>
+        <div class="flex flex-col md:flex-row gap-10 justify-content-center pb-10 ml-8 md:ml-53">
             <a href="p4/index.html" class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:brightness-110">
                 <div class="w-85 bg-slate-900 shadow-xl/60 shadow-slate-500/50 inset-shadow-sm inset-shadow-slate-500/60 p-4 rounded-md">
                     <img src="./images/proyecto 4.png" alt="p3" class="rounded-md h-45">
