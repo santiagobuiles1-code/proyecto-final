@@ -1,8 +1,43 @@
 @media (max-width: 768px) {
-    
-    .titulo-nav {
+
+    .caja-titulo-botones{
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
 
+    .caja-botones-nav {
+        margin-right: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .navbar-nav {
+        gap: 0 !important;
+    }
+
+    .caja-main h2 {
+        margin-left: 0 !important;
+        padding-left: 15px !important;
+    }
+
+    .caja-hero img {
+        height: 300px;
+    }
+
+    .caja-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px !important;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .botones-footer{
+        padding-bottom: 50px !important;
+    }
 }
