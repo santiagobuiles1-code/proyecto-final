@@ -9,6 +9,8 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+/* header */
+
 header{
     position: fixed;
     top: 0;
@@ -45,6 +47,8 @@ header a:hover{
     background-color: orange;
 }
 
+/* nav */
+
 .navegacion{
     position: fixed;
     top: 63px;
@@ -78,7 +82,9 @@ section{
     text-align: center;
 }
 
+/* acerca de */
 
+/* formulario */
 
 .formulario-main{
     background: #f8f9fa;
