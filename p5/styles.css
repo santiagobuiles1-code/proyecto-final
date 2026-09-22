@@ -5,14 +5,128 @@
 }
 
 body{
+    background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background: rgb(231, 135, 26);
     padding: 15px;
+    padding-right: 6rem;
+    gap: 3rem;
+    z-index: 1000;
+}
+
+header h1{
+    font-size: 1.8rem;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    padding: 6px 14px;
+    text-decoration: none;
+    background-color: rgb(186, 80, 5);
+    border-radius: 8px;
+    color: white;
+    transition: transform 0.2s ease, background-color 0.1s ease;
+}
+
+header a:hover{
+    transform: scale(1.08);
+    background-color: orange;
+}
+
+.navegacion{
+    position: fixed;
+    top: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 20px;
+    background-color: rgb(225, 110, 23);
+    z-index: 1000;
+}
+
+.navegacion a{
+    text-decoration: none;
+    color: black;
+}
+
+.navegacion a:hover{
+    color: white;
+}
+
+section{
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.formulario-main{
+    background: #f8f9fa;
+}
+
+.formulario-main h2{
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.formulario-main p{
+    color: #555;
+    margin-bottom: 30px;
+}
+
+form{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea{
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+button[type="submit"]{
+    padding: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover{
+     background: rgb(120, 1, 153);
 }
